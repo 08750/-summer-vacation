@@ -11,7 +11,7 @@ function drawerButton() {
 }
 
 // メニューリンクをクリックしたら閉じる処理
-document.querySelectorAll(".drawerMenu a").forEach((link) => {
+document.querySelectorAll(".nav-menu a").forEach((link) => {
   link.addEventListener("click", () => {
     document.querySelector(".drawerButton").classList.remove("active");
     document.querySelector(".drawerMenu").classList.remove("active");

@@ -307,7 +307,6 @@ header .drawerButton span:nth-child(3) {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
   z-index: 1000;
   right: -100%;
   transition: 0.3s all ease-out;
@@ -468,14 +467,19 @@ footer {
   right: -100%;
   transition: 0.3s all ease-out;
 }
-@media (width >= 768px) {
+@media (width >= 800px) {
   .drawerMenu {
     position: static;
     height: auto;
   }
 }
 
+.drawerMenu.active {
+  right: 0;
+}
+
 .nav-menu {
+  list-style: none;
   display: flex;
   flex-direction: column;
   gap: 2rem;
